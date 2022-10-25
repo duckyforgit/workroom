@@ -1,74 +1,136 @@
 <?php
 /**
- * Template Name: Contact
+ * Template Name: Contact Template
+ * Template Post Type: post, page
  *
- * This is the template that displays the contact page.  
+ * Template for displaying a landing page.
  *
- * @package FoundationPress
- * @since FoundationPress 1.0.0
+ * @package workroom1128
  */
 
-get_header(); ?> 
+// Exit if accessed directly.
+defined( 'ABSPATH' ) || exit;
 
-<div class="contact page-content"> 
-	<!-- <div class="full no-padding no-overflow fullscreen-header top-shift bgimg-3 "> -->
-	<header class="front-hero" role="banner">  
-	  <div class="overlay"> 
-	  <div class="marketing">
-      <div class="tagline"> 
-       <h1 class="transition-grow ">Grow your brand with us.</h1>
-       <!--   <h1>We help clients design their future.</h1> -->
-        <h2 class="animated fadeInRight animateBanner-2 sub-title">We do the heavy lifting. You have a business to run.</h2>  
-        <!--  <h2 class="sub-title">Converting visitors to customers through exceptional web experience.</h2>   -->
-        <!--<h1>Growing your brand with you.</h1><h2 class="subtitle">We do the heavy lifting. You have a business to run.</h2> Captivating and appealing website design   Grow your brand with us. 
-        Custom & affordable website design.  -->
- 
-         
-     
-        <div class="call-to-action align-right">
-          <span style="font-size:1.75rem;color:white; ">Custom and affordable web design and branding</span> 
-          <a role="button" href="<?php echo home_url().'/contact' ?>" class="button cta align-center" >Get a free audit today</a>
-        </div><!-- get a free mockup     consultation   audit let's get started-->
-        
-      </div>
-    </div>
-   </div>
-  <div class="banner-arrow banner-arrow-bottom banner-arrow-center">       
-<!-- 	  	<div class="header-intro grid-container-max">
-	    	<div class="grid-x grid-padding-x align-center-middle">
-	      	<div class="small-12 medium-8 cell">
-		        <h1>Let's design your future.</h1>          
-		         <h2 class="sub-title">Contact us today for a free website audit.</h2>   
-		   		 </div> 
-		   		 <div class="small-12 medium-4 cell">
-		   		 	<div class="call-to-action" itemprop="telephone"> 
-		   		 		<a role="button" href="tel:+13177327300" class="button cta text-center not-active"rel="nofollow">1-317-732-7300</a>
-		   		 	</div>
-		        
-		   		 </div> 
-	    	</div>
-	    </div> -->
-	     <div class="banner-arrow banner-arrow-bottom banner-arrow-center">    
-  </div>
-	  </div> 
-	  <div class="margin"></div>
-	  <div class="grid-container">
-	  	<div class="grid-x align-center-middle">
-	  		<div class="cell small-12">
-	  				<h2 class="h1 text-center">Contact Us Today</h2>
-	  				<p class="text-center">We respect your privacy. Information you provide will be used for consultation only. It will not be shared with any Third Party.</p>
-	  			</div>
-	  		</div>
-	   
-	  	<div class="grid-x align-center-middle">
-	      <div class="cell small-12 medium-12 large-8 text-center ">
+get_header( 'workroom1128' );
 
-	       
-							<?php echo do_shortcode('[ninja_form id=4]'); ?>
-							<!-- work with us or get a free audit -->
-		    </div>
-		    
-		 </div>
+?>
+<div class=" page-wrapper" id="page-wrapper">
+
+<div class="container mt-5 mb-5" id="content" tabindex="-1">
+
+	<div class="row">
+
+		<main class="site-main" id="main">
+
+			<div class="container-fluid banner-background--hours" id="content" tabindex="-1">
+
+				<div class="banner-background--over"></div>
+
+				<div class="banner-background--text px-4 py-5 my-5 text-center">
+
+					<h1 class="display-5 fw-bold text-white"><span style="color:#CFA55D">Hours</span> of Operation</h1> 
+                    
+						<!-- ======= Contact Section ======= -->
+                        <section id="contact" class="contact">
+					<div class="container" data-aos="fade-up">
+
+						<div class="section-title">
+							<h2>Contact</h2>
+							<p>Contact Us</p>
+						</div>
+					</div>
+
+					<div data-aos="fade-up">
+						<!-- <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe> -->
+					</div>
+
+					<div class="container" data-aos="fade-up">
+
+						<div class="row mt-5">
+
+							<div class="col-lg-4">
+								<div class="info">
+									<div class="address">
+										<i class="bi bi-geo-alt"></i>
+										<h4>Location:</h4>
+										<p>A108 Adam Street, New York, NY 535022</p>
+									</div>
+
+									<div class="open-hours">
+										<i class="bi bi-clock"></i>
+										<h4>Open Hours:</h4>
+										<p>
+											Monday-Saturday:<br>
+											11:00 AM - 2300 PM
+										</p>
+									</div>
+
+									<div class="email">
+										<i class="bi bi-envelope"></i>
+										<h4>Email:</h4>
+										<p>info@example.com</p>
+									</div>
+
+									<div class="phone">
+										<i class="bi bi-phone"></i>
+										<h4>Call:</h4>
+										<p>+1 5589 55488 55s</p>
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class="col-lg-8 mt-5 mt-lg-0">
+
+								<form action="forms/contact.php" method="post" role="form" class="php-email-form">
+									<div class="row">
+										<div class="col-md-6 form-group">
+											<input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+										</div>
+										<div class="col-md-6 form-group mt-3 mt-md-0">
+											<input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+										</div>
+									</div>
+									<div class="form-group mt-3">
+										<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+									</div>
+									<div class="form-group mt-3">
+										<textarea class="form-control" name="message" rows="8" placeholder="Message" required></textarea>
+									</div>
+									<div class="my-3">
+										<div class="loading">Loading</div>
+										<div class="error-message"></div>
+										<div class="sent-message">Your message has been sent. Thank you!</div>
+									</div>
+									<div class="text-center"><button type="submit">Send Message</button></div>
+								</form>
+
+							</div>
+
+						</div>
+
+					</div>
+					
+				</div> 
+				<?php
+				if ( have_posts() ) {
+					// Start the Loop.
+					while ( have_posts() ) {
+						the_post();
+						the_content();
+
+					} // end of the loop.
+				} else {
+					get_template_part( 'loop-templates/content', 'page' );
+				}
+				?>
+			</div>
+
+		</main>
 	</div>
+
 </div>
-<?php get_footer();
+
+<?php
+get_footer();
