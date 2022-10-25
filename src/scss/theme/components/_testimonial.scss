@@ -1,0 +1,86 @@
+/** Testimonial **/
+
+.testimonial-list {
+	max-width: 900px;
+	margin: auto;
+	position: relative;
+}
+.testimonial-list .card {
+	box-shadow: 0px 5px 2px 0px rgba(128, 128, 128, 0.20);
+}
+.card {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+	word-wrap: break-word;
+	background-color: #fff;
+	background-clip: border-box; 
+	border: 0; 
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	margin-bottom: 30px;
+	-webkit-box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.20);
+	box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.20);
+}
+.testimonial-list blockquote {
+	border-left: none;
+	color: #ddd;
+	position: relative;
+	margin: 0 0 1rem;
+	padding: .5625rem 1.25rem 0 1.1875rem;			 
+}
+.testimonial-list .blockquote > :last-child {
+margin-bottom: 0;
+}
+.testimonial-list blockquote::before {
+	content: "\f10d";
+	font-family: "Font Awesome 6 Free";     
+	font-weight: 900;
+	display: inline-block;
+	font-style: normal;
+	font-variant: normal;
+	position: absolute;
+	font-size: 4em;
+	margin-left: -0.6em;
+	margin-top: 0;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+}
+.testimonial-list .border-left {
+	position: relative;
+	left: 50px;
+}
+.border-left {
+	border-left: 1px solid #737373;
+	padding-left: 50px;
+}
+.testimonial-list blockquote p {
+	margin-left: 20px;
+}
+
+cite {
+	margin-bottom: 2rem;
+	text-align: left;
+	color: #636363;
+	font-weight: 700;
+	display: block;
+	font-size: .8125rem;
+}
+cite::before {
+	content: "— ";
+}
+.cite-caption {
+	font-style: normal;
+	text-align: center;
+	font-size: 1rem;
+	line-height: 3;
+	margin-top: 0.5rem;
+	color: white;
+	background: coral;
+	background: linear-gradient(90deg, rgba(255, 127, 80, 0.811362) 10%, coral 100%);
+}
+.testimonial-list cite {
+	margin-left: 120px;
+}

@@ -1,0 +1,128 @@
+
+/*--------------------------------------------------------------
+# Table Section
+--------------------------------------------------------------*/
+table.course-options {
+	display: none;
+	table-layout: fixed;
+	width: 100%;
+}
+@media screen and (min-width: 1024px) {
+	table.course-options {
+		display: table;
+	}
+}	
+.mobile {
+	display: block;
+}
+
+@media screen and (min-width: 1024px) {
+	.mobile {
+		display: none;
+	}
+}
+.mobile .col-md-4,
+.mobile .col-md-8,
+.mobile .col-sm-4,
+.mobile .col-sm-9 {
+	border: 1px solid #0a0a0a;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	padding: 0.5rem;
+}
+
+.mobile-title {
+	background-color: #f55c20;
+	color: #fff;
+}
+table.course-options {
+		
+	table-layout: fixed;
+	width: 100%;
+}
+table.course-options th[role=columnheader] {
+	background-color: #f55c20;
+	border: 1px solid #0a0a0a;
+	color: #fff;
+	text-align: center;
+	font-weight: 500;
+	padding: 0.75rem 1rem;
+}
+@include media-breakpoint-up (lg) { // 992px only 3 columns available.
+	.table.course-options {
+		display: table;
+	}
+}
+tbody, td, tfoot, th, thead, tr {
+	border-color: inherit;
+	border-style: solid;
+	border-width: 0;
+}
+
+table.course-options tbody, table.course-options tfoot, 
+table.course-options thead {
+	border: 1px solid #f1f1f1;
+	background-color: #fefefe;
+}
+tbody, td, tfoot, th, thead, tr {
+	border-color: inherit;
+	border-style: solid;
+	border-width: 0;
+}
+table.course-options th[role=columnheader] {
+	background-color: $primary;
+	border: 1px solid #0a0a0a;
+	color: #fff;
+	text-align: center;
+	font-weight: 500;
+	padding: 0.75rem 1rem;
+}
+table.course-options td {
+	background-color: #ddd;
+	border: none;
+	border: 1px solid #0a0a0a;
+	text-align: center;
+	min-width: 200px;
+	padding: 1rem;
+}
+/** Table for Webinar Series **/
+.table-responsive {
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+}
+.responsive-card-table {
+	border-collapse: collapse;
+	font-size: .9rem;
+	margin-top: 3rem;
+}
+.responsive-card-table td,
+.responsive-card-table th,
+.responsive-card-table tr {
+	border: 1px solid #0a0a0a;
+}
+.responsive-card-table th {
+	background-color: #f3f3f3;
+	text-align: center;
+	font-weight: 600;
+	letter-spacing: .5px;
+}
+
+table tbody tr.tropical-blue {
+	background-color: rgba(180,196,231,.65);
+}
+table tbody tr.grapefruit-light {
+	background-color: rgba(240,210,112,.5);
+}
+table tbody tr.gray {
+	background-color: #eee;
+}
+.responsive-card-table tr td {
+	line-height: 2;
+	vertical-align: middle;
+}
