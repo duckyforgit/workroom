@@ -29,7 +29,7 @@ get_header();
 			<main class="site-main" id="main">
 			<?php
 			if ( have_posts() ) {
-				// Start the Loop.
+				// Start the Loop and testing git commit.
 				while ( have_posts() ) {
 					the_post();
 					get_template_part( 'template-parts/content', 'clients' );
